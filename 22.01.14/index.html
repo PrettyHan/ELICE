@@ -4,27 +4,60 @@
 <head>
     <title>Web</title>
     <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap" rel="stylesheet">
     <style>
         body {
             background-color: #cbeef3;
             color: blueviolet;
         }
-        a{
-            color:cornflowerblue;
+
+        a {
+            color: cornflowerblue;
+        }
+
+        .welcome {
+            border-bottom: 5px solid red;
+            padding: 30px;
+        }
+
+        h1 a {
+            text-decoration: none;
+            font-size: 50px;
+            font-family: 'The Nautigal', cursive;
+        }
+        #content{
+            display:grid;
+            grid-template-columns: 200px 600px 300px;
+            border: 5px solid red;
+        }
+        #menu{
+            border: 5px solid blue;
+        }
+        #webis{
+            border: 5px solid green;
         }
     </style>
 </head>
 
 <body>
-    <h1><a href="index.html">Welcome</a></h1>
-    <ol>
-        <li>html</li>
-        <li>css</li>
-        <li>js</li>
-    </ol>
-    <h2>web is</h2>
-    Welcome is Lorem ipsum dolor sit amet consectetur, adipisicing elit. In qui cupiditate ipsam iste aliquid deserunt
-    non quasi amet, nostrum sint officia dolor aspernatur veritatis voluptatibus. Iure eius adipisci architecto dolorum!
+    <h1 class="welcome"><a href="index.html">Welcome</a></h1>
+    <div id ='content'>
+        <div id='menu'>
+            <ol>
+                <li><a href="1.html">HTML</a></li>
+                <li><a href="">CSS</a></li>
+                <li><a href="">JavaScript</a></li>
+            </ol>
+        </div>
+        <div id='webis'>
+            <h2>web is</h2>
+            <p>Welcome is Lorem ipsum dolor sit amet consectetur, adipisicing elit. In qui cupiditate ipsam iste aliquid deserunt
+            non quasi amet, nostrum sint officia dolor aspernatur veritatis voluptatibus. Iure eius adipisci architecto dolorum!</p>
+        </div>
+    </div>
+    
 </body>
 
 </html>

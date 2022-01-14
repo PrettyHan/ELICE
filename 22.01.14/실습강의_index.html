@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .flex_box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .grid_box {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+      }
+    </style>
+  </head>
+  <body>
+    <p>FLEX 예시</p>
+    <div class="flex_box">
+      <div style="background-color: red; flex: 1">1</div>
+      <div style="background-color: green; flex: 2">2</div>
+      <div style="background-color: blue; flex: 1">3</div>
+    </div>
+
+    <p>GRID 예시</p>
+    <div class="grid_box">
+      <div style="background-color: red">1</div>
+      <div style="background-color: green">2</div>
+      <div style="background-color: blue">3</div>
+    </div>
+  </body>
+</html>
