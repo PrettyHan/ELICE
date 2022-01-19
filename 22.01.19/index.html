@@ -1,22 +1,37 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>web</title>
 </head>
+
 <body>
     <input type="button" value="dark" onclick="
-    document.querySelector('body').style.backgroundColor='black';
-    document.querySelector('body').style.color='white';
+
+    let target = document.querySelector('body');
+    let as = document.querySelectorAll('a');
+
+    if(this.value === 'dark') {
     target.style.backgroundColor='black';
     target.style.color='white';
-  ">
-  <input type="button" value="day" onclick="
-    document.querySelector('body').style.backgroundColor='white';
-    document.querySelector('body').style.color='black';
-    target.style.backgroundColor='white';
-    target.style.color='black';
+    this.value = 'day';
+
+        for(let i = 0; i < as.length ; i += 1) {
+        as[i].style.color ='white';
+        }
+    }
+ 
+    else {
+        target.style.backgroundColor='white';
+        target.style.color='black';
+        this.value ='dark';
+        for(let i = 0; i < as.length ; i += 1) {
+        as[i].style.color ='black';
+        }
+        
+    }   
     ">
-    <h1><a href ="index.html">포트폴리오</a></h1>
+    <h1><a href="index.html">포트폴리오</a></h1>
     <nav>
         <ol>
             <li><a href="1.html">opentutorials.org</a></li>
@@ -29,4 +44,5 @@
         저는 한우성입니다.
     </article>
 </body>
+
 </html>
