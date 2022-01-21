@@ -1,0 +1,1 @@
+console.log(Array(100).fill().map((v,i) => i+1)).filter(v=>(i%2==0))
