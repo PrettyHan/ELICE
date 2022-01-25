@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>WEB1</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <h1><a href="index.html">WEB</a></h1>
+    <ol>
+    </ol>
+    <h2>Welcome</h2>
+    <p>
+        Hello, WEB
+    </p>
+    <script>
+        //   정공법 : 장황하다.
+
+         let topics = [
+             {id:1, title:'html', body:'html is ...'},
+             {id:2, title:'css', body:'css is ...'}
+         ]
+        // let text = document.createTextNode('HTML');
+        // let a = document.createTextNode('a');
+        // a.href = '1.html';
+        // let li = document.creatElement('li')
+        // a.appendChild(text);
+        // li.appendChild(a);
+        // ol.appendChild(li);
+        function Nav() {
+            document.querySelector('ol').innerHtml = document.querySelector('ol').innerHtml + '<li><a href="object.html">html</a></li>';
+        let liTag = '';
+        for(let i = 0 ; i <topics.length ; i++); {  
+            liTag = liTag +  `<li><a href="object.html>${topice[i].title}</a></li>`;
+            }
+        document.querySelector('ol').innerHtml = liTag;
+        }
+    </script>
+</body>
+
+</html>
