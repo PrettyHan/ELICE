@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영화 데이터 가져오기</title>
+    <script>
+        window.onload = () => {
+            fetch('https://elice-movie-data.herokuapp.com/data')
+                .then(response => response.json())
+                .then((data) => {
+                    let result = data.map(v => `<img src="${v.img}"><p>${v.name}</p><p>${v.summary}</p>`).join("");
+                    document.write(result)
+                    console.log(data)
+
+
+                });
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
