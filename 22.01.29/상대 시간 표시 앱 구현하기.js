@@ -16,7 +16,7 @@ const TimeTextMap = {
     [TimeMap.day]: "일",
     [TimeMap.week]: "주",
     [TimeMap.month]: "개월",
-    [TimeMap.year]: "년",
+    [TimeMap.year]: "년"
 }
 
 
@@ -28,11 +28,11 @@ const RelativeTime = {
   diff: (date) => {
     const seconds = (new Date() - date) / 1000
     
-    return object
+    return Object
         .entries(TimeMap)
         .reduce((text, [time, value]) => {
             if (seconds >= value)
-                return createTimeText(seconds, value, TimeTextMap[value])
+return createTimeText(seconds, value, TimeTextMap[value])
             return text    
         }, "방금 전")
   
