@@ -1,5 +1,5 @@
-git init
-git add .
-git commit -m 'commit'
-git remote add origin 원격주소
-git push
+npm 
+yarn
+js
+node
+express
