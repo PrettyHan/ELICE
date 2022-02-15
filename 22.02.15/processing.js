@@ -1,4 +1,3 @@
-import {grade} from './grade.js'
+const hello2 = require('./grade.js')
 
-
-console.log(grade)
+console.log(hello2)
