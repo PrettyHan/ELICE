@@ -205,4 +205,4 @@ app.get("/", async (req, res) => {
   } else res.redirect("/login");
 });
 
-app.listen(3000, () => console.log("3000번 포트 실행"));
+app.listen(process.env.PORT || 3000, () => console.log("3000번 포트 실행"));
